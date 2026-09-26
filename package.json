@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-sunrisesunset",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sunrise-Sunset MCP — wraps the sunrisesunset.io API (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-9ba81f7982579c798a2179c6217d15ae3f20d5918ee657f5049109f1b622b881",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-a04f87a0f7a2b710102587fa5ad25fc42f23caf255199e15b9a79e269655e5d9",
+    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
   }
 }
