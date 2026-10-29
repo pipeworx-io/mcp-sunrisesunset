@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-sunrisesunset",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Sunrise-Sunset MCP — wraps the sunrisesunset.io API (free, no auth)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-sunrisesunset": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "sunrisesunset"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-sunrisesunset.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/sunrisesunset",
   "pipeworx": {
-    "sourceHash": "v1-a04f87a0f7a2b710102587fa5ad25fc42f23caf255199e15b9a79e269655e5d9",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "sunrisesunset",
+    "gatewaySlug": "sunrisesunset",
+    "sourceHash": "v1-a57da7fe98620aa329cb26db2a9b5dba87762ab470d48d4e4270ef14056130d0",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }

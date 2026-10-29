@@ -1,0 +1,49 @@
+[
+  {
+    "name": "get_times",
+    "description": "Get today's sunrise, sunset, dawn, dusk, solar noon, golden hour, and day length for a given latitude and longitude. Returns all times in the location's local timezone.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number",
+          "description": "Latitude of the location (e.g., 40.7128)"
+        },
+        "lng": {
+          "type": "number",
+          "description": "Longitude of the location (e.g., -74.0060)"
+        }
+      },
+      "required": [
+        "lat",
+        "lng"
+      ]
+    }
+  },
+  {
+    "name": "get_times_date",
+    "description": "Get sunrise, sunset, dawn, dusk, solar noon, and golden hour times for a specific date at a location.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number",
+          "description": "Latitude of the location (e.g., 40.7128)"
+        },
+        "lng": {
+          "type": "number",
+          "description": "Longitude of the location (e.g., -74.0060)"
+        },
+        "date": {
+          "type": "string",
+          "description": "Date in YYYY-MM-DD format (e.g., \"2024-06-21\")"
+        }
+      },
+      "required": [
+        "lat",
+        "lng",
+        "date"
+      ]
+    }
+  }
+]
